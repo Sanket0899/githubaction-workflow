@@ -1,11 +1,11 @@
-name: First Github Action
+name: First Github Action    #name of the github action
 
-on: [push]
+on: [push]   #event on which the action should be triggered
 
-jobs:
-  firstgithubaction:
-    runs-on: ubuntu-latest
-    steps:
+jobs:    #jobs which needs to performed
+  firstgithubaction:     #name of the job
+    runs-on: ubuntu-latest   #runner on which the job would be run
+    steps:    #steps to be performed under this job
       - name: Print Hello
         run: echo "Hello Github action"
       - name: Print name of repository
