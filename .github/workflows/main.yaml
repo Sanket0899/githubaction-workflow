@@ -1,0 +1,12 @@
+name: First Github Action
+
+on: [push]
+
+jobs:
+  firstgithubaction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Hello Github action"
+      - name: Print name of repository
+        run: echo "This is the ${{ github.repository}}"
